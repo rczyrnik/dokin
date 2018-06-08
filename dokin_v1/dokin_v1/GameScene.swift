@@ -16,8 +16,8 @@ class GameScene: SKScene {
     var y_box_position = 1
 
     // object representing the box he will be touching
-    var box_size = 400
-    var box = SKSpriteNode(color:.white,size:CGSize(width: 400, height : 400))
+    var box_size = 1000
+    var box = SKSpriteNode(color:.white,size:CGSize(width: 1000, height : 1000))
     
     // object represeting the text that will tell us the score
     var label = SKLabelNode(text: "Press for Treats!")
@@ -33,7 +33,7 @@ class GameScene: SKScene {
         label.fontColor = SKColor.red
         addChild(label)
         
-        let recognizer = UITapGestureRecognizer(target: self, action: #selector(tap))
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(swipe))
         view.addGestureRecognizer(recognizer)
     }
     
@@ -51,7 +51,7 @@ class GameScene: SKScene {
         }
     }
     
-    func tap(recognizer: UIGestureRecognizer) {
+    func swipe(recognizer: UIGestureRecognizer) {
         // need for random placement, should be earlier and once :/
         let int_width = UInt32(view!.frame.width)
 
@@ -83,7 +83,7 @@ class GameScene: SKScene {
         }
         
         //not used at the moment
-        if box.size.width > 400 {
+        if box.size.width > 1000 {
         box.size.width = box.size.width-10
         box.size.height = box.size.height-10
         }
