@@ -33,20 +33,20 @@ class hardGameScene: SKScene {
     
     override func didMove(to view: SKView) {
         // Add Target Box
-        x_box_position = Int(view.frame.width / 2)
-        y_box_position = Int(view.frame.height / 2)
+        x_box_position = Int(self.frame.width / 2)
+        y_box_position = Int(self.frame.height / 2)
         target_box.position = CGPoint(x: x_box_position, y: y_box_position)
         target_box.name = "target_box"
         addChild(target_box)
         
         // Add label
-        label.position = CGPoint(x: view.frame.width / 2, y: view.frame.height / 20)
+        label.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 20)
         label.fontColor = SKColor.red
         addChild(label)
         
         // Add exit box
-        x_box_position = Int(view.frame.width - exit_box.size.width)
-        y_box_position = Int(view.frame.height - exit_box.size.height)
+        x_box_position = Int(self.frame.width - exit_box.size.width)
+        y_box_position = Int(self.frame.height - exit_box.size.height)
         exit_box.position = CGPoint(x: x_box_position, y: y_box_position)
         exit_box.name = "exit_box"
         addChild(exit_box)

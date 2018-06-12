@@ -21,7 +21,9 @@ class easyGameScene: SKScene {
     var y_box_position = 1
 
     // object representing the box he will be touching
-    var target_box = SKSpriteNode(color:.white,size:CGSize(width: 1000, height : 1000))
+//    var screen_width = view.frame.width
+//    var screen_height = 1000
+    var target_box = SKSpriteNode(color:.white,size:CGSize(width: 100, height : 100))
     
     // object represeting the text that will tell us the score
     var label = SKLabelNode(text: "Press for Treats!")
@@ -30,23 +32,23 @@ class easyGameScene: SKScene {
     var exit_box = SKSpriteNode(color:.red,size:CGSize(width: 20, height : 20))
     
     override func didMove(to view: SKView) {
-        x_box_position = Int(view.frame.width / 2)
-        y_box_position = Int(view.frame.height / 2)
-        target_box.size.height = view.frame.height
-        target_box.size.width = view.frame.width-60
+        x_box_position = Int(self.frame.width / 2)
+        y_box_position = Int(self.frame.height / 2)
+        target_box.size.height = self.frame.height
+        target_box.size.width = self.frame.width-60
         target_box.position = CGPoint(x: x_box_position, y: y_box_position)
         target_box.name = "target_box"
         addChild(target_box)
         
-        label.position = CGPoint(x: view.frame.width / 2, y: view.frame.height / 20)
+        label.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 20)
         label.fontColor = SKColor.red
         addChild(label)
         
-        x_box_position = Int(view.frame.width - exit_box.size.width)
-        y_box_position = Int(view.frame.height - exit_box.size.height)
+        x_box_position = Int(self.frame.width - exit_box.size.width)
+        y_box_position = Int(self.frame.height - exit_box.size.height)
         exit_box.position = CGPoint(x: x_box_position, y: y_box_position)
+        exit_box.name = "exit_box"
         addChild(exit_box)
-        
     }
     
     func touchDown() {
