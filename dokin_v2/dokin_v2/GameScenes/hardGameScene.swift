@@ -29,7 +29,10 @@ class hardGameScene: SKScene {
     var label = SKLabelNode(text: "Press for Treats!")
     
     // object represnting return to home
-    var exit_box = SKSpriteNode(color:.red,size:CGSize(width: 20, height : 20))
+    var exit_box = SKSpriteNode(color:.red,size:CGSize(width: 40, height : 40))
+
+    let my_blue = UIColor(red: 0, green: 162/255, blue: 1, alpha: 1)
+
     
     override func didMove(to view: SKView) {
         // Add Target Box
@@ -37,18 +40,21 @@ class hardGameScene: SKScene {
         y_box_position = Int(self.frame.height / 2)
         target_box.position = CGPoint(x: x_box_position, y: y_box_position)
         target_box.name = "target_box"
+        target_box.color = my_blue
         addChild(target_box)
         
         // Add label
-        label.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 20)
-        label.fontColor = SKColor.red
+        label.position = CGPoint(x: self.frame.width / 4, y: self.frame.height-40)
+        label.fontColor = my_blue
+        label.fontName = "AvenirNext-Bold"
         addChild(label)
         
         // Add exit box
-        x_box_position = Int(self.frame.width - exit_box.size.width)
-        y_box_position = Int(self.frame.height - exit_box.size.height)
+        x_box_position = Int(self.frame.width - exit_box.size.width+10)
+        y_box_position = Int(self.frame.height - exit_box.size.height+10)
         exit_box.position = CGPoint(x: x_box_position, y: y_box_position)
         exit_box.name = "exit_box"
+        exit_box.texture = SKTexture(imageNamed: "home")
         addChild(exit_box)
     }
     
