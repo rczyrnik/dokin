@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Dokin_v2
+//  dokin_v2
 //
 //  Created by Gandalf Fluffernutter on 6/10/18.
 //  Copyright © 2018 Gandalf. All rights reserved.

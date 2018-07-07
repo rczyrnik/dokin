@@ -1,6 +1,6 @@
 //
 //  GameViewController.swift
-//  Dokin_v2
+//  dokin_v2
 //
 //  Created by Gandalf Fluffernutter on 6/10/18.
 //  Copyright © 2018 Gandalf. All rights reserved.
@@ -16,8 +16,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
+            if let scene = SKScene(fileNamed: "MenuScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
