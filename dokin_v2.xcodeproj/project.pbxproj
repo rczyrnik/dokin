@@ -10,6 +10,7 @@
 		E426A0A720F16C25007B060E /* easy_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E426A0A620F16C25007B060E /* easy_green.png */; };
 		E426A0AA20F16C34007B060E /* medium_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E426A0A820F16C34007B060E /* medium_green.png */; };
 		E426A0AB20F16C34007B060E /* hard_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E426A0A920F16C34007B060E /* hard_green.png */; };
+		E426A0AD20F16F0C007B060E /* kindo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E426A0AC20F16F0C007B060E /* kindo_icon.png */; };
 		E42CF41220CE28DB009C0C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CF41120CE28DB009C0C73 /* AppDelegate.swift */; };
 		E42CF41620CE28DB009C0C73 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E42CF41520CE28DB009C0C73 /* Actions.sks */; };
 		E42CF41820CE28DB009C0C73 /* easyGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CF41720CE28DB009C0C73 /* easyGameScene.swift */; };
@@ -35,6 +36,7 @@
 		E426A0A620F16C25007B060E /* easy_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = easy_green.png; path = dokin_v2/MenuScene/easy_green.png; sourceTree = SOURCE_ROOT; };
 		E426A0A820F16C34007B060E /* medium_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medium_green.png; path = dokin_v2/MenuScene/medium_green.png; sourceTree = SOURCE_ROOT; };
 		E426A0A920F16C34007B060E /* hard_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hard_green.png; path = dokin_v2/MenuScene/hard_green.png; sourceTree = SOURCE_ROOT; };
+		E426A0AC20F16F0C007B060E /* kindo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kindo_icon.png; sourceTree = SOURCE_ROOT; };
 		E42CF40E20CE28DB009C0C73 /* dokin_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dokin_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42CF41120CE28DB009C0C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E42CF41520CE28DB009C0C73 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				E42CF41E20CE28DD009C0C73 /* Assets.xcassets */,
 				E42CF42020CE28DD009C0C73 /* LaunchScreen.storyboard */,
 				E42CF42320CE28DD009C0C73 /* Info.plist */,
+				E426A0AC20F16F0C007B060E /* kindo_icon.png */,
 			);
 			path = dokin_v2;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				E42CF42220CE28DD009C0C73 /* LaunchScreen.storyboard in Resources */,
 				E42CF42B20CE2E53009C0C73 /* KnifeClicker.wav in Resources */,
 				E42CF43120CE31A3009C0C73 /* easy.png in Resources */,
+				E426A0AD20F16F0C007B060E /* kindo_icon.png in Resources */,
 				E426A0AA20F16C34007B060E /* medium_green.png in Resources */,
 				E42CF41620CE28DB009C0C73 /* Actions.sks in Resources */,
 				E42CF42D20CE2FA3009C0C73 /* MenuScene.sks in Resources */,
